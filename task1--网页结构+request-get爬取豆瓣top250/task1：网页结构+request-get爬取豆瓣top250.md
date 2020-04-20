@@ -38,23 +38,22 @@ HTML代码中通常使用 &#60;script&#62; 进行包裹，可以直接书写在 
 手写一个简单 HTML 页面，首先创建一个文本文件，将后缀名改为 .html ，比如demo.html，写入如下内容：
 
 
-<!-- <!DOCTYPE  html> -->
-'''
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Demo</title>
-    </head>
-    <body>
-        <div id="container">
-            <div class="wrapper">
-                <h1>Hello World</h1>
-                <div>Hello Python.</div>
-            </div>
-        </div>
-    </body>
-</html>
-'''
+><!DOCTYPE  html>
+><html>
+>    <head>
+>       <meta charset="UTF-8">
+>        <title>Demo</title>
+>    </head>
+>    <body>
+>        <div id="container">
+>            <div class="wrapper">
+>               <h1>Hello World</h1>
+>                <div>Hello Python.</div>
+>            </div>
+>        </div>
+>    </body>
+></html>
+
 
 
 
@@ -73,6 +72,8 @@ body 中的内容一般为整个 html 文档的正文，html的标签由&#60;h1&
 - style 属性可以将表现性质赋予一个特定原色。比起使用id或class属性从样式表中选择元素，“style”被认为是一个更好的做法。
 
 - tile 属性用于给元素一个附加的说明。大多数浏览器中这一属性显示为工具提示。
+
+----
 
 ### 4 request.get进阶：爬取豆瓣电影
 
@@ -93,6 +94,7 @@ body 中的内容一般为整个 html 文档的正文，html的标签由&#60;h1&
 ![电影封面](https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025156img.PNG)
 
 
+----
 
 
 ### 5 API使用示例
@@ -132,5 +134,7 @@ body 中的内容一般为整个 html 文档的正文，html的标签由&#60;h1&
 ### 参考
 
 https://blog.csdn.net/ydydyd00/article/details/82154382
+
 https://www.cnblogs.com/haichong/p/8067874.html
+
 https://github.com/datawhalechina/team-learning/blob/master/Python%E7%88%AC%E8%99%AB%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/task1/task1.ipynb
