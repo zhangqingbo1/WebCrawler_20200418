@@ -21,22 +21,23 @@ HTML 是用来搭建整个网页的骨架，而 CSS 是为了让整个页面更�
 
 访问博客站的首页，打开 F12 开发者工具，在Elements的网页源代码中，
 不同类型的文字通过不同类型的标签来表示，各种标签通过不同的排列和嵌套才形成了网页的框架：
-- 图片用 <img> 标签表示
-- 视频用 <video> 标签表示
-- 段落用 <p> 标签表示
-- 它们之间的布局又常通过布局标签 <div> 嵌套组合而成
+- 图片用 &#60;img&#62; 标签表示，
+- 视频用 &#60;video&#62; 标签表示，
+- 段落用 &#60;p&#62; 标签表示，
+- 它们之间的布局又常通过布局标签 &#60;div&#62; 嵌套组合而成
+
 
 **CSS**
 在右边 Style 标签页中，显示的就是当前选中的 HTML 代码标签的 CSS 层叠样式，“层叠”是指当在HTML中引用了数个样式文件，并且样式发生冲突时，浏览器能依据层叠顺序处理。“样式”指网页中文字大小、颜色、元素间距、排列等格式。
 
 **JavaScript**
-HTML代码中通常使用 <script> 进行包裹，可以直接书写在 HTML 页面中，也可以以文件的形式引入。
+HTML代码中通常使用 &#60;script&#62; 进行包裹，可以直接书写在 HTML 页面中，也可以以文件的形式引入。
 
 
 #### 3.2 网页结构
 手写一个简单 HTML 页面，首先创建一个文本文件，将后缀名改为 .html ，比如demo.html，写入如下内容：
 
-'''
+<!-- 
 <!DOCTYPE  html>
 <html>
     <head>
@@ -51,13 +52,15 @@ HTML代码中通常使用 <script> 进行包裹，可以直接书写在 HTML 页
             </div>
         </div>
     </body>
-</html>
-
-'''
+</html> -->
 
 
-首先，整个文档是以 DOCTYPE 来开头的，这里定义了文档类型是 html ，整个文档最外层的标签是 <html> ，并且结尾还以 </html> 来表示闭和。整个 HTML 文档一般分为 head 和 body 两个部分，在 head 头中，我们一般会指定当前的编码格式为 UTF-8 ，并且使用 title 来定义网页的标题，这个会显示在浏览器的标签上面。
-body 中的内容一般为整个 html 文档的正文，html的标签由<h1>到<h6>六个标签构成，字体由大到小递减，换行标签为<br>，链接使用<a>来创建，herf属性包含链接的URL地址，比如<a href="http://www.baidu.com" >一个指向百度的链接</a>
+
+首先，整个文档是以 DOCTYPE 来开头的，这里定义了文档类型是 html ，整个文档最外层的标签是 &#60;html&#62; ，并且结尾还以 &#60;/html&#62; 来表示闭和。整个 HTML 文档一般分为 head 和 body 两个部分，在 head 头中，我们一般会指定当前的编码格式为 UTF-8 ，并且使用 title 来定义网页的标题，这个会显示在浏览器的标签上面。
+body 中的内容一般为整个 html 文档的正文，html的标签由&#60;h1&#62;到&#60;h6&#62;六个标签构成，字体由大到小递减，换行标签为&#60;br&#62;，链接使用&#60;a&#62;来创建，herf属性包含链接的URL地址，比如&#60;a href="http://www.baidu.com" &#62;一个指向百度的链接&#60;/a&#62;
+
+
+<a href="http://www.baidu.com" >一个指向百度的链接</a>
 
 大多数原色的属性以“名称-值”的形式成对出现，由“=”连接并写在开始标签元素名之后。值一般由单引号或双引号包围，有些值的内容包含特定字符，在html中可以去掉引号。不加引号的属性值被认为是不安全的。要注意的是，许多元素存在一些共同的属性：
 
@@ -74,14 +77,32 @@ body 中的内容一般为整个 html 文档的正文，html的标签由<h1>到<
 
 <img src="https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025718htmls%E9%A1%B5%E9%9D%A2%E8%A7%A3%E6%9E%90.png" alt="网页分析" style="zoom: 67%;" />
 
-代码在这儿：[douban_top250](http://connorlin.github.io)。
+代码在这儿：[douban_top250](https://github.com/zhangqingbo1/WebCrawler_20200418/blob/master/task1--%E7%BD%91%E9%A1%B5%E7%BB%93%E6%9E%84%2Brequest-get%E7%88%AC%E5%8F%96%E8%B1%86%E7%93%A3top250/douban_top250.py)。
 输出一个txt文档，txt可包含电影名、导演、影评、评分等多项内容，和电影封面图片：
 
-<img src="https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025134txt1.PNG" alt="文本" style="zoom:80%;" />
+<img src="https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025134txt1.PNG" alt="文本" style="zoom:50%;" />
 
-<img src="https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025144txt2.PNG" alt="文本" style="zoom:80%;" />
 
-<img src="https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025156img.PNG" alt="电影封面" style="zoom:80%;" />
+
+
+
+<img src="https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025144txt2.PNG" alt="文本" style="zoom:50%;" />
+
+
+
+
+
+
+
+
+<img src="https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025156img.PNG" alt="电影封面" style="zoom:50%;" />
+
+
+
+
+
+
+
 
 ### 5 API使用示例
 所谓的采集网络数据，并不一定必须从网页中抓取数据，而api（Application Programming Iterface）的用处就在这里：API为开发者提供了方便友好的接口，不同的开发者用不同的语言都能获取相同的数据。目前API一般会以XML（Extensible Markup Language，可拓展标记语言）或者JSON（JavaScript Object Notation）格式来返回服务器响应，其中JSON数据格式越来越受到人们的欢迎。
