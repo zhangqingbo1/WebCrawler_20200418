@@ -37,8 +37,9 @@ HTML代码中通常使用 &#60;script&#62; 进行包裹，可以直接书写在 
 #### 3.2 网页结构
 手写一个简单 HTML 页面，首先创建一个文本文件，将后缀名改为 .html ，比如demo.html，写入如下内容：
 
-<!-- 
-<!DOCTYPE  html>
+
+<!-- <!DOCTYPE  html> -->
+'''
 <html>
     <head>
         <meta charset="UTF-8">
@@ -52,7 +53,8 @@ HTML代码中通常使用 &#60;script&#62; 进行包裹，可以直接书写在 
             </div>
         </div>
     </body>
-</html> -->
+</html>
+'''
 
 
 
@@ -75,20 +77,20 @@ body 中的内容一般为整个 html 文档的正文，html的标签由&#60;h1&
 ### 4 request.get进阶：爬取豆瓣电影
 
 **网页分析：**
-![网页分析](https://github.com/zhangqingbo1/WebCrawler_20200418/blob/master/utils_imgs/htmls%E9%A1%B5%E9%9D%A2%E8%A7%A3%E6%9E%90.png)
+![网页分析](https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025718htmls%E9%A1%B5%E9%9D%A2%E8%A7%A3%E6%9E%90.png)
 
 代码在这儿：[douban_top250](https://github.com/zhangqingbo1/WebCrawler_20200418/blob/master/task1--%E7%BD%91%E9%A1%B5%E7%BB%93%E6%9E%84%2Brequest-get%E7%88%AC%E5%8F%96%E8%B1%86%E7%93%A3top250/douban_top250.py)。
 
 输出一个txt文档，txt可包含电影名、导演、影评、评分等多项内容，和电影封面图片：
 
 **txt可包含电影名、导演、影评、评分等多项内容：**
-![文本1](https://github.com/zhangqingbo1/WebCrawler_20200418/blob/master/utils_imgs/txt1.PNG)
+![文本1](https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025134txt1.PNG)
 
 
-![文本2](https://github.com/zhangqingbo1/WebCrawler_20200418/blob/master/utils_imgs/txt2.PNG)
+![文本2](https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025144txt2.PNG)
 
 **电影封面图片：**
-![电影封面](https://github.com/zhangqingbo1/WebCrawler_20200418/blob/master/utils_imgs/img.PNG)
+![电影封面](https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420025156img.PNG)
 
 
 
