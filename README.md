@@ -1,4 +1,5 @@
 
+
 2020年4月组队:Python爬虫编程实践
 
 队伍名称   队长编号    队长_群昵称  队员编号   队员_群昵称
@@ -14,3 +15,5 @@
 爬虫梦之队   153        Ireland      115      咕噜噜卡莫
 
 爬虫梦之队   153        Ireland      38       wuyuyu
+
+![爬虫学习大纲](https://images.cnblogs.com/cnblogs_com/Ireland/1650332/o_200420030408course.png)
